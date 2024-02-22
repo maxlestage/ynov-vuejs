@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "title": "Early Bird",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus reprehenderit accusantium facere quibusdam libero distinctio illo eligendi nihil nisi repudiandae, eius enim dolore perferendis eum sequi asperiores, non omnis?",
+      "price": "7.90€"
+    },
+    {
+      "title": "Plus",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus reprehenderit accusantium facere quibusdam libero distinctio illo eligendi nihil nisi repudiandae, eius enim dolore perferendis eum sequi asperiores, non omnis?",
+      "price": "12.90€"
+    },
+    {
+      "title": "Premium",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus reprehenderit accusantium facere quibusdam libero distinctio illo eligendi nihil nisi repudiandae, eius enim dolore perferendis eum sequi asperiores, non omnis?",
+      "price": "17.90€"
+    }
+  ]
+}
