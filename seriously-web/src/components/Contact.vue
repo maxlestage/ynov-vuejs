@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
   <section>
     <div class="text">
@@ -12,8 +13,6 @@
     <div class="image"></div>
   </section>
 </template>
-
-<script setup></script>
 <style scoped>
 section {
   display: flex;
@@ -53,7 +52,7 @@ section p {
   width: 60%;
   background-color: #7e086d;
   height: 60vh;
-  clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
+  clip-path: polygon(0 0, 55vw 0, 40vw 100vh, 0 100vh);
   z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
