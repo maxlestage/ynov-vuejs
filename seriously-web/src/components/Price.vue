@@ -5,6 +5,7 @@
       <PriceCard v-for="item in priceData.products" :item="item" :key="item" />
     </div>
   </section>
+  <br /><br />
 </template>
 <script setup>
 import PriceCard from '@/atoms/PriceCard.vue'

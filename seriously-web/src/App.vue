@@ -1,7 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
-
 import NavBar from './atoms/NavBar.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -11,6 +11,7 @@ import NavBar from './atoms/NavBar.vue'
         <RouterLink to="/about">About</RouterLink>
     </nav> -->
   <RouterView />
+  <Footer />
 </template>
 
 <style scoped></style>

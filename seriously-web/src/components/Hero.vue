@@ -37,7 +37,8 @@
   height: 100vh;
   clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(rgb(64 7 55 / 52%), rgba(0, 0, 0, 0.5)),
+    url('https://hips.hearstapps.com/hmg-prod/images/romantic-boyfriend-kissing-on-happy-girlfriends-royalty-free-image-1698180095.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -49,7 +50,8 @@
   width: 60%;
   background-color: rgb(157 7 136);
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(rgba(148, 1, 174, 0.36), rgba(0, 0, 0, 0.5)),
+    url('https://www.verywellmind.com/thmb/BfbiW2obAx0gWGg-sod_KpzNVH4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1414968502-3ec8c5105f4143669c08c40ff8aa102f.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -20,8 +20,9 @@ console.log('props.item : ', props.item)
 </script>
 <style scoped>
 .card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  /* border: 2px ridge #7e086d; */
+  border: 2mm ridge rgb(63 7 55);
+  border-radius: 25px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   margin: 32px;
   padding: 20px;
