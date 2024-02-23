@@ -256,7 +256,7 @@ const userData = reactive({
 .user div > div {
   flex: 1 1;
   margin-bottom: 0px;
-  background-color: #f5f5f5;
+  background-color: #9401AE5B;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
