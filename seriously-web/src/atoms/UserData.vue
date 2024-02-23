@@ -1,12 +1,15 @@
 <script setup>
-defineProps({ userData: {} })
-defineEmits(['images'])
+const props = defineProps({ userData: {} })
+const emit = defineEmits(['images'])
+setTimeout(() => {
+  emit('images', props.userData)
+}, 100)
+
 </script>
 
 <template>
   <div class="profile">
     <h1>{{ userData.first_name }} {{ userData.last_name }}</h1>
-    <img :src="userData.profileImage" alt="Profil de l'utilisateur" />
     <p>Email: {{ userData.email }}</p>
     <p>Date de naissance: {{ userData.birth_date }}</p>
     <p>Sexe: {{ userData.gender }}</p>
@@ -16,15 +19,6 @@ defineEmits(['images'])
     <p>Taux: {{ userData.grade }}</p>
     <p>Lieu: {{ userData.area_location }}</p>
     <p>Note scolaire: {{ userData.school_grade }}</p>
-
-    <div v-if="userData.conversation.length">
-      <h2>Conversations</h2>
-      <div v-for="conversation in userData.conversation" :key="conversation._id">
-        <p>Message: {{ conversation.messages.text }}</p>
-        <p>Envoyé par: {{ conversation.participant_ids }}</p>
-        <p>Date: {{ conversation.messages.timestamp }}</p>
-      </div>
-    </div>
   </div>
 </template>
 

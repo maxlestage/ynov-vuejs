@@ -1,16 +1,18 @@
 <script setup>
-defineProps({ userData: {} })
+const props = defineProps({ userData: {} })
+console.log('props.userData : ', props.userData)
 </script>
+
 <template>
-  <div v-if="userData.gallery.images.length">
+  <div v-if="userData.length">
     <h2>Galerie</h2>
     <div class="carousel">
       <div class="carousel-images">
         <img
-          v-for="(image, index) in userData.gallery.images"
+          v-for="(image, index) in userData"
           :key="image._id"
-          :src="image.link"
           :alt="'Image ' + (index + 1)"
+          :src="image.link"
           class="carousel-image"
         />
       </div>
@@ -31,7 +33,8 @@ defineProps({ userData: {} })
 }
 
 .carousel-image {
-  width: 15%;
+  width: 20%;
+  margin: 80px;
   height: auto;
   object-fit: cover;
 }

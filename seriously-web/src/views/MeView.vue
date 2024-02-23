@@ -2,18 +2,27 @@
   <main>
     <section class="panel_user">
       <div>
-        <UserData v-for="item in userData.users" :key="item._id" :userData="item" />
-        <Gallery v-for="item in userData.users" :key="item._id" :userData="item" />
+        <UserData v-for="item in userData.users" :key="item._id" :userData="item"
+                  @images="catchEmit" />
+        <Gallery v-for="item in returnedEmit.gallery" :key="item._id" :userData="item" class="gallery-stock" />
       </div>
     </section>
   </main>
 </template>
 <script setup>
-import { reactive } from 'vue'
+import { reactive, ref, watchEffect } from 'vue'
 
 import UserData from '../atoms/UserData.vue'
 import Gallery from '@/atoms/Gallery.vue'
 
+const returnedEmit = ref({})
+
+
+const catchEmit = (i) => {
+  return returnedEmit.value = i
+}
+
+watchEffect(() => console.log('returnedEmit.value : ', returnedEmit.value))
 const userData = reactive({
   users: [
     {
@@ -295,5 +304,10 @@ const userData = reactive({
   font-size: 14px;
   color: #666;
   margin-bottom: 5px;
+}
+
+.gallery-stock {
+  margin: 12px;
+  padding: 25%;
 }
 </style>
