@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import MeView from '@/views/MeView.vue'
 import MessageView from '@/views/MessageView.vue'
+import FindView from '@/views/FindView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/me',
       name: 'me',
       component: MeView
+    },
+    {
+      path: '/find',
+      name: 'find',
+      component: FindView
     },
     {
       path: '/chat',

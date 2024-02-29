@@ -4,12 +4,11 @@ const emit = defineEmits(['images'])
 setTimeout(() => {
   emit('images', props.userData)
 }, 100)
-
 </script>
 
 <template>
   <div class="profile">
-    <h1>{{ userData.first_name }} {{ userData.last_name }}</h1>
+    <h3 class="title">{{ userData.first_name }} {{ userData.last_name }}</h3>
     <p>Email: {{ userData.email }}</p>
     <p>Date de naissance: {{ userData.birth_date }}</p>
     <p>Sexe: {{ userData.gender }}</p>
@@ -37,7 +36,7 @@ setTimeout(() => {
   color: #333;
 }
 
-.profile h1 {
+.profile h3 {
   font-size: 28px;
   color: #4a4a4a;
   margin-bottom: 20px;
