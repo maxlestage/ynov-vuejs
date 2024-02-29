@@ -1,35 +1,113 @@
-# seriously-web
+# Seriously Web - Application de Rencontre
 
-This template should help get you started developing with Vue 3 in Vite.
+Seriously Web est une application web simple de rencontre développée avec Vue.js. Elle permet aux utilisateurs de se connecter, de rechercher des personnes, d'envoyer des messages et de découvrir des informations sur l'application.
 
-## Recommended IDE Setup
+## Installation
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Pour installer et exécuter Seriously Web, vous aurez besoin de Node.js et npm (ou bunjs) installés sur votre machine.
 
-## Customize configuration
+### Cloner le dépôt
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+```bash
+git clone git@github.com:maxlestage/ynov-vuejs.git
+```
 
-## Project Setup
+```bash
+ cd seriously-web
+```
 
-```sh
+### Installer les dépendances
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+ou
 
-```sh
+```bash
+bun install
+```
+
+### Lancer l'application en mode développement
+
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+ou
 
-```sh
-npm run build
+```bash
+bun run vite
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+L'application sera accessible à l'adresse `http://localhost:3000`.
 
-```sh
-npm run lint
+## Routes
+
+Seriously Web comprend les routes suivantes :
+
+- `/` : Page d'accueil
+- `/me` : Page de profil de l'utilisateur
+- `/find` : Page de recherche de personnes
+- `/chat` : Page de chat pour envoyer des messages
+- `/about` : Page à propos de l'application
+
+## Scripts
+
+Voici quelques scripts utiles inclus dans `package.json` :
+
+- `dev` : Lance l'application en mode développement avec Vite.
+- `vite` : Utilise Bun pour exécuter Vite.
+- `build` : Construit l'application pour la production.
+- `preview` : Prévisualise l'application construite.
+- `lint` : Exécute ESLint pour vérifier la qualité du code.
+- `format` : Formate le code source avec Prettier.
+
+### Tree
+
+```tree
+.
+├── README.md
+├── Tree.txt
+├── bun.lockb
+├── index.html
+├── jsconfig.json
+├── package-lock.json
+├── package.json
+├── public
+│   └── favicon.ico
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   ├── base.css
+│   │   ├── logo.svg
+│   │   └── main.css
+│   ├── atoms
+│   │   ├── Gallery.vue
+│   │   ├── NavBar.vue
+│   │   ├── PriceCard.vue
+│   │   └── UserData.vue
+│   ├── components
+│   │   ├── Contact.vue
+│   │   ├── Footer.vue
+│   │   ├── Hero.vue
+│   │   ├── Message.vue
+│   │   └── Price.vue
+│   ├── data
+│   │   ├── data.json
+│   │   └── user.json
+│   ├── main.js
+│   ├── router
+│   │   └── index.js
+│   ├── stores
+│   │   └── counter.js
+│   └── views
+│       ├── AboutView.vue
+│       ├── FindView.vue
+│       ├── HomeView.vue
+│       ├── MeView.vue
+│       └── MessageView.vue
+└── vite.config.js
+
+10 directories, 32 files
 ```

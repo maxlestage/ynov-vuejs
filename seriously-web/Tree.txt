@@ -1,0 +1,44 @@
+.
+├── README.md
+├── Tree.txt
+├── bun.lockb
+├── index.html
+├── jsconfig.json
+├── package-lock.json
+├── package.json
+├── public
+│   └── favicon.ico
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   ├── base.css
+│   │   ├── logo.svg
+│   │   └── main.css
+│   ├── atoms
+│   │   ├── Gallery.vue
+│   │   ├── NavBar.vue
+│   │   ├── PriceCard.vue
+│   │   └── UserData.vue
+│   ├── components
+│   │   ├── Contact.vue
+│   │   ├── Footer.vue
+│   │   ├── Hero.vue
+│   │   ├── Message.vue
+│   │   └── Price.vue
+│   ├── data
+│   │   ├── data.json
+│   │   └── user.json
+│   ├── main.js
+│   ├── router
+│   │   └── index.js
+│   ├── stores
+│   │   └── counter.js
+│   └── views
+│       ├── AboutView.vue
+│       ├── FindView.vue
+│       ├── HomeView.vue
+│       ├── MeView.vue
+│       └── MessageView.vue
+└── vite.config.js
+
+10 directories, 32 files
